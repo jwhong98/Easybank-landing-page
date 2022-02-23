@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Card = styled.li`
   background-color: #fff;
   border-radius: 5px;
+  flex: 1;
 `;
 
 export const ImgWrap = styled.div`
   width: 100%;
-  height: 200px;
+  max-height: 200px;
   overflow: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

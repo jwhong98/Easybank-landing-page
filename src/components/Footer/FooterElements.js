@@ -1,13 +1,26 @@
 import styled from "styled-components";
+import { device } from "../../deviceSize";
 
 export const FooterContainer = styled.footer`
+  width: 100%;
   background-color: hsl(233, 26%, 24%);
+  padding: 2.5rem;
+`;
+
+export const FooterWrap = styled.div`
+  max-width: 1110px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.5rem;
+
   color: #fff;
   gap: 2rem;
+
+  @media ${device.desktop} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const Socials = styled.div`
@@ -42,6 +55,10 @@ export const ListItem = styled.li`
   :hover {
     color: hsl(136, 65%, 51%);
   }
+
+  @media ${device.desktop} {
+    text-align: left;
+  }
 `;
 
 export const Icon = styled.img`
@@ -60,6 +77,12 @@ export const FooterList = styled.ul`
   gap: 1rem;
   padding: 0;
   margin: 0;
+
+  @media ${device.desktop} {
+    flex-wrap: wrap;
+    height: 100px;
+    width: 400px;
+  }
 `;
 
 export const Legal = styled.div`
@@ -67,6 +90,10 @@ export const Legal = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+
+  @media ${device.desktop} {
+    align-items: flex-end;
+  }
 `;
 
 export const Copyright = styled.p`

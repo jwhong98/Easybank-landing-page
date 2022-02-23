@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../deviceSize";
 
 export const Item = styled.li`
   display: flex;
@@ -7,6 +8,14 @@ export const Item = styled.li`
   justify-content: center;
   text-align: center;
   gap: 1rem;
+  flex: 1;
+
+  @media ${device.desktop} {
+    align-items: flex-start;
+    text-align: left;
+    /* max-width: 250px; */
+    gap: 1.5rem;
+  }
 `;
 
 export const ItemImg = styled.img``;

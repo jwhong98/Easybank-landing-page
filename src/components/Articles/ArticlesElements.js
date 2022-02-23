@@ -1,9 +1,19 @@
 import styled from "styled-components";
+import { device } from "../../deviceSize";
 
 export const ArticleContainer = styled.section`
   padding: 3rem 1rem;
   text-align: center;
   background-color: hsl(0, 0%, 98%);
+
+  @media ${device.desktop} {
+    text-align: left;
+  }
+`;
+
+export const ArticleWrapper = styled.div`
+  max-width: 1110px;
+  margin: auto;
 `;
 
 export const Title = styled.p`
@@ -20,4 +30,8 @@ export const ArticleList = styled.ul`
   padding: 0;
   margin: 0;
   gap: 1.5rem;
+
+  @media ${device.desktop} {
+    flex-direction: row;
+  }
 `;

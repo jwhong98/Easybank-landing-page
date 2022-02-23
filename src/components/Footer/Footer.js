@@ -8,6 +8,7 @@ import pinterest from "../../images/icon-pinterest.svg";
 import instagram from "../../images/icon-instagram.svg";
 import {
   FooterContainer,
+  FooterWrap,
   Socials,
   Logo,
   SocialsList,
@@ -21,38 +22,40 @@ import {
 const Footer = () => {
   return (
     <FooterContainer>
-      <Socials>
-        <Logo src={logo} />
-        <SocialsList>
-          <ListItem>
-            <Icon src={facebook} alt="Facebook" />
-          </ListItem>
-          <ListItem>
-            <Icon src={youtube} alt="Facebook" />
-          </ListItem>
-          <ListItem>
-            <Icon src={twitter} alt="Facebook" />
-          </ListItem>
-          <ListItem>
-            <Icon src={pinterest} alt="Facebook" />
-          </ListItem>
-          <ListItem>
-            <Icon src={instagram} alt="Facebook" />
-          </ListItem>
-        </SocialsList>
-      </Socials>
-      <FooterList>
-        <ListItem>about us</ListItem>
-        <ListItem>contact</ListItem>
-        <ListItem>blog</ListItem>
-        <ListItem>careers</ListItem>
-        <ListItem>support</ListItem>
-        <ListItem>privacy policy</ListItem>
-      </FooterList>
-      <Legal>
-        <Button />
-        <Copyright>© easybank. all rights reserved</Copyright>
-      </Legal>
+      <FooterWrap>
+        <Socials>
+          <Logo src={logo} />
+          <SocialsList>
+            <ListItem>
+              <Icon src={facebook} alt="Facebook" />
+            </ListItem>
+            <ListItem>
+              <Icon src={youtube} alt="Facebook" />
+            </ListItem>
+            <ListItem>
+              <Icon src={twitter} alt="Facebook" />
+            </ListItem>
+            <ListItem>
+              <Icon src={pinterest} alt="Facebook" />
+            </ListItem>
+            <ListItem>
+              <Icon src={instagram} alt="Facebook" />
+            </ListItem>
+          </SocialsList>
+        </Socials>
+        <FooterList>
+          <ListItem>about us</ListItem>
+          <ListItem>contact</ListItem>
+          <ListItem>blog</ListItem>
+          <ListItem>careers</ListItem>
+          <ListItem>support</ListItem>
+          <ListItem>privacy policy</ListItem>
+        </FooterList>
+        <Legal>
+          <Button />
+          <Copyright>© easybank. all rights reserved</Copyright>
+        </Legal>
+      </FooterWrap>
     </FooterContainer>
   );
 };

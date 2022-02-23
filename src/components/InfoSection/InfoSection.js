@@ -2,6 +2,7 @@ import React from "react";
 import {
   InfoContainer,
   InfoWrap,
+  InfoTextWrap,
   Title,
   Subtitle,
   InfoList,
@@ -13,6 +14,7 @@ const InfoSection = () => {
   const createItem = (info) => {
     return (
       <InfoItem
+        key={info.id}
         img={info.img}
         alt={info.alt}
         title={info.title}
@@ -23,13 +25,16 @@ const InfoSection = () => {
   return (
     <InfoContainer>
       <InfoWrap>
-        <Title>Why choose Easybank?</Title>
-        <Subtitle>
-          We leverage Open Banking to turn your bank account into your financial
-          hub. Control your finances like never before.{" "}
-        </Subtitle>
+        <InfoTextWrap>
+          <Title>Why choose Easybank?</Title>
+          <Subtitle>
+            We leverage Open Banking to turn your bank account into your
+            financial hub. Control your finances like never before.{" "}
+          </Subtitle>
+        </InfoTextWrap>
+
+        <InfoList>{data.map(createItem)}</InfoList>
       </InfoWrap>
-      <InfoList>{data.map(createItem)}</InfoList>
     </InfoContainer>
   );
 };

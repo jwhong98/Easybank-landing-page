@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../deviceSize";
 
 export const Nav = styled.nav`
   width: 100%;
@@ -10,6 +11,10 @@ export const Nav = styled.nav`
   position: absolute;
   z-index: 20;
   background-color: #fff;
+
+  @media ${device.desktop} {
+    position: relative;
+  }
 `;
 
 export const NavContent = styled.div`
