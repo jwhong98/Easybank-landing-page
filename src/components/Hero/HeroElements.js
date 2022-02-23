@@ -11,6 +11,7 @@ export const HeroContainer = styled.section`
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  min-height: 350px;
   text-align: center;
   align-items: center;
   padding: 1rem;
