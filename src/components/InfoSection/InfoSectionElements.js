@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.section`
-  background: hsl(0, 0%, 98%);
+  background: hsl(220, 16%, 96%);
   padding: 3rem 1rem;
 `;
 
