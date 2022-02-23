@@ -21,6 +21,7 @@ export const Logo = styled.img`
   width: auto;
   /* temporary solution */
   filter: brightness(0) invert(1);
+  cursor: pointer;
 `;
 
 export const SocialsList = styled.ul`
@@ -36,10 +37,20 @@ export const ListItem = styled.li`
   text-transform: capitalize;
   font-size: 0.9rem;
   font-weight: 300;
+  cursor: pointer;
+
+  :hover {
+    color: hsl(136, 65%, 51%);
+  }
 `;
 
 export const Icon = styled.img`
   width: 1.25rem;
+
+  :hover {
+    filter: invert(68%) sepia(24%) saturate(1332%) hue-rotate(83deg)
+      brightness(95%) contrast(87%);
+  }
 `;
 
 export const FooterList = styled.ul`

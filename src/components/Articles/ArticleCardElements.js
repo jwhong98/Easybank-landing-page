@@ -34,6 +34,9 @@ export const Author = styled.p`
 
 export const Title = styled.p`
   color: hsl(233, 26%, 24%);
+  :hover {
+    color: hsl(192, 70%, 51%);
+  }
 `;
 
 export const Subtitle = styled.p`

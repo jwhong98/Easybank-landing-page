@@ -18,6 +18,10 @@ export const NavContent = styled.div`
   align-items: center;
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+  cursor: pointer;
+`;
 
-export const MobileIcon = styled.img``;
+export const MobileIcon = styled.img`
+  cursor: pointer;
+`;
