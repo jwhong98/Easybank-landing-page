@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero";
 import InfoSection from "./components/InfoSection/InfoSection";
 import Navbar from "./components/Navbar/Navbar";
 import MenuModal from "./components/MenuModal/MenuModal";
+import Temp from "./components/Hero/Temp";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,8 @@ function App() {
     <>
       {isOpen && <MenuModal onToggle={onToggle} />}
       <Navbar isOpen={isOpen} onToggle={onToggle} />
-      <Hero />
+      <Temp />
+      {/* <Hero /> */}
       <InfoSection />
       <Articles />
       <Footer />
